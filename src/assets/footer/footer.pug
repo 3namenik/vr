@@ -1,0 +1,43 @@
+<!-- footer -->
+link(rel="stylesheet", href="/assets/footer/footer.css")
+script(async src="/assets/footer/footer.js")
+
+footer.footer
+
+div(style="height: 500px")
+  #modal-callback.modal.fade(aria-hidden='true' aria-labelledby='exampleModalToggleLabel' tabindex='-1')
+  .modal-dialog.modal-dialog-centered
+    .modal-content(action="#")
+      button.modal-content__close(data-bs-dismiss="modal")
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 20 20" fill="none">
+          <path d="M1 1L19 19" stroke="#999999" stroke-width="2" stroke-linecap="round"/>
+          <path d="M19 1L0.999969 19" stroke="#999999" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      .modal-content__title
+        | Обратный звонок
+      .modal-content__desc
+        | Заполните форму и мы свяжемся с вами
+      form#form-content.form-content(action="#")
+        input(type="text" required name="user-name" placeholder="Ваше имя")
+        input(type="text" required name="phone" placeholder="Ваш телефон")
+        .form-content__privacy
+          | Нажимая на кнопку, я принимаю <a href="#">условия соглашения</a>
+        button.btn.btn_green.form-content__btn(type="submit" title="Отправить")
+          | Отправить заявку
+
+      
+#modal-succes.modal.fade(aria-hidden='true' aria-labelledby='exampleModalToggleLabel' tabindex='-1')
+  .modal-dialog.modal-dialog-centered
+    .modal-content
+      .modal-content__title
+        | Заявка отправлена
+      .modal-content__desc
+        | В близжайшее время наш менеджер свяжется с вами!
+#modal-error.modal.fade(aria-hidden='true' aria-labelledby='exampleModalToggleLabel' tabindex='-1')
+  .modal-dialog.modal-dialog-centered
+    .modal-content
+      .modal-content__title
+        | Ошибка отправки
+      .modal-content__desc
+        | Попробуйте обновить страницу или связаться с нами по номеру телефона!
+        <!-- <a href="tel:<?= str_replace(' ', '', file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/local/templates/' . SITE_TEMPLATE_ID . '/text/phone.php')) ?>"><?= file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/local/templates/' . SITE_TEMPLATE_ID . '/text/phone.php') ?></a> -->
