@@ -1,0 +1,98 @@
+.home-blog {
+  display: grid;
+  grid-template-columns: max-content 1fr max-content;
+  grid-template-areas: "home-blog__title home-blog__tg home-blog__all" "home-blog__cont home-blog__cont home-blog__cont";
+  gap: 50px 25px;
+}
+@media (max-width: 575px) {
+  .home-blog {
+    gap: 30px 20px;
+    grid-template-areas: ". home-blog__title home-blog__tg" "home-blog__cont home-blog__cont home-blog__cont" "home-blog__all home-blog__all home-blog__all";
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 360px) {
+  .home-blog {
+    grid-template-columns: 1fr;
+    grid-template-areas: "home-blog__title" "home-blog__tg" "home-blog__cont" "home-blog__all";
+    gap: 10px;
+  }
+}
+
+.home-blog__tg {
+  grid-area: home-blog__tg;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: #FFFFFF;
+  width: max-content;
+}
+.home-blog__tg:hover, .home-blog__tg:focus {
+  text-decoration: underline;
+  color: #FFFFFF;
+}
+@media (max-width: 360px) {
+  .home-blog__tg {
+    margin: auto;
+    margin-bottom: 10px;
+  }
+}
+
+.home-blog__all {
+  grid-area: home-blog__all;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #FFFFFF;
+  margin: auto;
+}
+.home-blog__all:hover, .home-blog__all:focus {
+  text-decoration: underline;
+  color: #FFFFFF;
+}
+
+.home-blog__title {
+  grid-area: home-blog__title;
+  gap: 25px;
+}
+.home-blog__title h2, .home-blog__title .h2 {
+  margin-bottom: 0;
+}
+
+.home-blog__cont {
+  grid-area: home-blog__cont;
+  display: grid;
+  grid-template-columns: 687fr 485fr;
+  gap: 10px 20px;
+}
+@media (max-width: 360px) {
+  .home-blog__cont {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 991px) {
+  .home-blog__cont {
+    grid-template-columns: 100%;
+  }
+}
+.home-blog__cont .blog-item:first-child {
+  grid-row: 1/4;
+  grid-template-rows: 1fr max-content;
+}
+@media (max-width: 991px) {
+  .home-blog__cont .blog-item:first-child {
+    grid-template-rows: 419px max-content;
+    grid-template-columns: 100%;
+  }
+}
+@media (max-width: 600px) {
+  .home-blog__cont .blog-item:first-child {
+    grid-template-rows: 220px max-content;
+  }
+}

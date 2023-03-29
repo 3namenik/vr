@@ -1,4 +1,5 @@
 
+document.addEventListener('DOMContentLoaded', () => {
     let advantages_block_slider = new Swiper('.advantages_block .swiper', {
         pagination: {
             el: '.swiper-pagination',
@@ -55,3 +56,4 @@
             }   
         })
     }
+});

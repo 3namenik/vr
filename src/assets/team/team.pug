@@ -1,0 +1,21 @@
+<!-- team -->
+link(rel="stylesheet", href="/assets/team/team.css")
+//- script(async src="/assets/team/team.js")
+
+.team
+    .team__items
+        include ../team-item/team-item
+        include ../team-item/team-item
+        include ../team-item/team-item
+    .team__form
+        .team__form-title
+            | Запишитесь на встречу или звонок в Zoom
+        .team__form-desc
+            | Предоставим чек-лист для подбора помещения и предложим свои варианты.
+        <form class="team__form-form">
+            <input type="text" name="user-name" placeholder="Как к вам обращаться?">
+            <input type="text" name="phone" placeholder="+7 (123) 456-78-90">
+            <button class="btn btn_red form-content__btn" title="Отправить">Отправить</button>
+        </form>
+        .team__form-privacy
+            | Нажимая на кнопку вы даете согласие на обработку <a href="#">персональных данных</a>

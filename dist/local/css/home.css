@@ -1,3 +1,4 @@
+/* .home-about */
 .home-about__desc {
   font-family: "Gilroy";
   font-style: normal;
@@ -6,6 +7,11 @@
   line-height: 160%;
   color: #FFFFFF;
   grid-area: home-about__desc;
+}
+@media (max-width: 575px) {
+  .home-about__desc {
+    text-align: center;
+  }
 }
 
 .home-about {
@@ -134,3 +140,23 @@
   text-align: center;
   color: #FFFFFF;
 }
+
+/* end .home-about */
+/* .home-sert */
+.home-sert {
+  display: grid;
+  grid-template-columns: 1fr 687px;
+  gap: 30px 22px;
+}
+@media (max-width: 991px) {
+  .home-sert {
+    grid-template-columns: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .home-sert {
+    text-align: center;
+  }
+}
+
+/* end .home-sert */

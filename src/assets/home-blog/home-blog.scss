@@ -1,0 +1,110 @@
+.home-blog{
+    display: grid;
+    grid-template-columns: max-content 1fr max-content;
+    grid-template-areas: 'home-blog__title home-blog__tg home-blog__all' 'home-blog__cont home-blog__cont home-blog__cont';
+    gap: 50px 25px;
+
+    @media (max-width: 575px){
+        gap: 30px 20px;
+        grid-template-areas: 
+            '. home-blog__title home-blog__tg' 
+            'home-blog__cont home-blog__cont home-blog__cont'
+            'home-blog__all home-blog__all home-blog__all'
+        ;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    @media (max-width: 360px) {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'home-blog__title'
+            'home-blog__tg'
+            'home-blog__cont'
+            'home-blog__all'
+        ;
+        gap: 10px;
+    }
+}
+
+.home-blog__tg{
+    grid-area: home-blog__tg;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    color: #FFFFFF;
+    width: max-content;
+    
+    &:hover,
+    &:focus{
+        text-decoration: underline;
+        color: #FFFFFF;
+    }
+
+    @media (max-width: 360px) {
+        margin: auto;
+        margin-bottom: 10px;
+    }
+}
+
+.home-blog__all{
+    grid-area: home-blog__all;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+    margin: auto;
+    
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+        color: #FFFFFF;
+    }
+}
+
+.home-blog__title{
+    grid-area: home-blog__title;
+    gap: 25px;
+
+    h2, .h2{
+        margin-bottom: 0;
+    }
+}
+
+.home-blog__cont{
+    grid-area: home-blog__cont;
+    display: grid;
+    grid-template-columns: 687fr 485fr;
+    gap: 10px 20px;
+
+    @media (max-width: 360px) {
+        margin-bottom: 20px;
+    }
+
+    @media (max-width: 991px) {
+        grid-template-columns: 100%;
+    }
+
+    .blog-item{
+        &:first-child {
+            grid-row: 1 / 4;
+            grid-template-rows: 1fr max-content;
+
+            @media (max-width: 991px) {
+                grid-template-rows: 419px max-content;
+                grid-template-columns: 100%;
+            }
+
+            @media (max-width: 600px) {
+                grid-template-rows: 220px max-content;
+            }
+        }
+    }
+}
+
+

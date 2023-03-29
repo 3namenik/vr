@@ -1,0 +1,15 @@
+//- form-sub
+link(rel="stylesheet", href="/assets/form-sub/form-sub.css")
+script(async src="/assets/form-sub/form-sub.js")
+
+.form-sub
+    .form-sub__title
+        | Подписаться на рассылку
+    .form-sub__desc
+        | Узнавайте о скидках и акциях первым
+    .form-sub__form-cont
+        form.form-sub__form
+            <input type="text" name="mail" placeholder="E-mail*" required>
+            <button class="btn btn_red form-content__btn" title="Отправить">Отправить</button>
+        .form-sub__privacy
+            | Нажимая на кнопку вы даете согласие на обработку <a href="#">персональных данных</a>

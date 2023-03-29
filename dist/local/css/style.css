@@ -177,7 +177,12 @@
 }
 
 body {
-  font-family: "Panton", "Roboto", Sans-serif;
+  font-family: "Gilroy", "Panton", "Roboto", Sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: #FFFFFF;
   /* background-color: #E5E5E5; */
   padding: 0;
   margin: 0;
@@ -189,6 +194,12 @@ body h2, body .h2 {
   font-size: 27px;
   line-height: 140%;
   color: #FFFFFF;
+  margin-bottom: 50px;
+}
+@media (max-width: 575px) {
+  body h2, body .h2 {
+    text-align: center;
+  }
 }
 body p {
   font-style: normal;
@@ -510,6 +521,9 @@ body {
   position: relative;
   overflow: hidden;
 }
+.btn-background-gradient:hover, .btn-background-gradient:focus {
+  color: #fff;
+}
 
 .btn-background-gradient .inner-container {
   position: relative;
@@ -799,10 +813,6 @@ body {
 }
 
 .page_block-title {
-  font-weight: 700;
-  font-size: 27px;
-  line-height: 140%;
-  color: #fff;
   width: 50%;
 }
 
@@ -811,6 +821,11 @@ body {
   line-height: 140%;
   color: #fff;
   width: 50%;
+}
+@media (max-width: 575px) {
+  .page_block-desc {
+    text-align: center;
+  }
 }
 
 .border-gradient {
