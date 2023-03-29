@@ -1,0 +1,19 @@
+.catalog-slider{
+    &:not(.swiper-initialized){
+        .swiper-wrapper{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 10px;
+            
+            @media (max-width: 991px) {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+
+            @media (max-width: 767px) {
+                grid-template-columns: 1fr 1fr;
+            }
+            
+
+        }
+    }
+}

@@ -1,0 +1,19 @@
+<!-- form-content -->
+link(rel="stylesheet", href="/assets/form-content/form-content.css")
+script(async src="/assets/form-content/form-content.js")
+
+.form-content
+    .form-content__title
+        .h2
+            | Заголовок
+    .form-content__desc
+        | Звоните по телефону <a href="tel:8(800)500-40-17">8 (800) 500-40-17</a> или <b>заполните форму</b> и наш менеджер оперативно свяжется с вами!
+    form.form-content__form
+        input(type="text" name="user-name" placeholder="Как к вам обращаться?")
+        input(type="text" name="phone" placeholder="+7 (123) 456-78-90")
+        button.btn.btn_red.form-content__btn(title="Отправить")
+            | Отправить
+    .form-content__privacy
+        | Нажимая на кнопку вы даете согласие на обработку <a href="#">персональных данных</a>
+    .form-content__img
+        img(src="/local/img/all/form-content.png", alt="" loading="lazy")

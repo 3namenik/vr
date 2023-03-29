@@ -1,0 +1,29 @@
+<!-- best-slider -->
+link(rel="stylesheet", href="/assets/best-slider/best-slider.css")
+script(async src="/assets/best-slider/best-slider.js")
+
+link(rel="stylesheet" href="/local/libs/swiper/swiper-bundle.min.css" )
+script(src="/local/libs/swiper/swiper-bundle.min.js" defer)
+
+.best-slider
+    .max-width.best-slider__header        
+        .best-slider__title
+            .h2 Лучшие предложения
+        .best-slider__desc
+            nav#nav-tab.nav.nav-tabs(role='tablist')
+                button#nav-home-tab.nav-link.active(data-bs-toggle='tab' data-bs-target='#nav-home' type='button' role='tab' aria-controls='nav-home' aria-selected='true') Акции
+                button#nav-profile-tab.nav-link(data-bs-toggle='tab' data-bs-target='#nav-profile' type='button' role='tab' aria-controls='nav-profile' aria-selected='false') Популярные
+                button#nav-contact-tab.nav-link(data-bs-toggle='tab' data-bs-target='#nav-contact' type='button' role='tab' aria-controls='nav-contact' aria-selected='false') Новинки
+
+    .best-slider__content
+        #nav-tabContent.tab-content
+            #nav-home.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='nav-home-tab')
+                .slider_wrap
+                    include ../catalog-slider/catalog-slider
+            #nav-profile.tab-pane.fade(role='tabpanel' aria-labelledby='nav-profile-tab')
+                .slider_wrap
+                    include ../catalog-slider/catalog-slider
+            #nav-contact.tab-pane.fade(role='tabpanel' aria-labelledby='nav-contact-tab') 
+                .slider_wrap
+                    include ../catalog-slider/catalog-slider
+        

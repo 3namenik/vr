@@ -1,4 +1,374 @@
-<!-- header -->
+// header
 link(rel="stylesheet", href="/assets/header/header.css")
 script(async src="/assets/header/header.js")
-header.header  
+
+header
+  .header-top_line
+    .wrap
+      .header-top_line-content
+        nav.header-top_line-nav
+          ul.header-top_line-list
+            li.header-top_line-list-item
+              a.header-top_line-list-item-link(href='/') Как выбрать VR-аттракцион?
+            li.header-top_line-list-item
+              a.header-top_line-list-item-link(href='/') Доставка и оплата
+            li.header-top_line-list-item
+              a.header-top_line-list-item-link(href='/') Гарантия
+            li.header-top_line-list-item
+              a.header-top_line-list-item-link(href='/') О компании
+            li.header-top_line-list-item
+              a.header-top_line-list-item-link(href='/') Контакты
+            li.header-top_line-list-item
+              a.header-top_line-list-item-link(href='/') Блог
+        a.header-top_line-language(href='/')
+          span РУС
+          img(src='/local/img/all/ru.svg' alt='ru')
+  .header-logo_line
+    .wrap
+      .header-logo_line-content
+        a.header-logo_line-logo(href='/')
+          img(src='/local/img/all/logo-header-desktop.svg' alt='LOGO')
+        .header-logo_line-search
+          form#header-logo_line-search-form.header-logo_line-search-form(action='/')
+            input#header-logo_line-search-input.header-logo_line-search-input(type='text' name='search' placeholder='Поиск по сайту')
+            button.header-logo_line-search-icon(type='submit')
+              img(src='/local/img/all/header-search-desktop.svg' alt='Lupa')
+            button.header-logo_line-reset-icon(type='reset')
+              img(src='/local/img/all/header-reset-desktop.svg' alt='Lupa')
+            .search_result
+              a.search_result-item(href='/')
+                img(src='/local/img/all/search-result-preview.jpg' alt='Превью поиска')
+                .search_result-item-content
+                  .search_result-item-name
+                    span.search_result-item-found Клу
+                    | б VR под ключ
+              a.search_result-item(href='/')
+                img(src='/local/img/all/search-result-preview.jpg' alt='Превью поиска')
+                .search_result-item-content
+                  .search_result-item-name
+                    span.search_result-item-found Клу
+                    | б VR под ключ
+          .header-logo_line-search-opener
+            img(src='/local/img/all/header-search-desktop.svg' alt='Lupa')
+        .header-logo_line-social_icons
+          a.header-logo_line-social-item(href='/')
+            img(src='/local/img/all/instagram-header-desktop.svg' alt='Instagram')
+          a.header-logo_line-social-item(href='/')
+            img(src='/local/img/all/telegram-header-desktop.svg' alt='Telegram')
+          a.header-logo_line-social-item(href='/')
+            img(src='/local/img/all/VK-header-desktop.svg' alt='VK')
+          a.header-logo_line-social-item(href='/')
+            img(src='/local/img/all/whatsapp-header-desktop.svg' alt='WhatsApp')
+        .header-logo_line-address
+          | г. Москва, Киевское 
+          br
+          |                     ш. 22 км, дом 4, строение 2
+        .header-logo_line-callback
+          a.header-logo_line-callback-phone(href='tel:+79999999999') 8 (800) 500-40-17
+          a.header-logo_line-callback-button.open-callback(href='javascript:void(0)') Заказать звонок
+        .header-logo_line-burger
+          span
+  .header-second_line
+    .wrap
+      nav.header-second_line-menu
+        ul.header-second_line-menu-ul
+          li.header-second_line-menu-catalog_item
+            span.burger
+              span
+            a.header-second_line-menu-catalog_item-link(href='/') Каталог
+            ul.header-second_line-catalog-ul-inner
+              li.header-second_line-catalog-inner_item
+                a(href='/')
+                  .header-second_line-catalog-inner_item-icon
+                    img(src='/local/img/all/header_catalog_icon_1.svg')
+                  .header-second_line-catalog-inner_item-text
+                    | VR Аттракционы
+                  span.header-second_line-catalog-inner_item-arrow
+                    img(src='/local/img/all/header_second_line_catalog_arrow.svg')
+                ul.header-second_line-catalog-ul-inner-second
+                  li.header-second_line-menu-inner_item
+                    a(href='/') VR Аттракционы
+                  li.header-second_line-menu-inner_item
+                    a(href='/') VR Аттракционы
+                  li.header-second_line-menu-inner_item
+                    a(href='/') VR Аттракционы
+                  li.header-second_line-menu-inner_item
+                    a(href='/') VR Аттракционы
+              li.header-second_line-catalog-inner_item
+                a(href='/')
+                  .header-second_line-catalog-inner_item-icon
+                    img(src='/local/img/all/header_catalog_icon_2.svg')
+                  .header-second_line-catalog-inner_item-text
+                    | VR Автосимуляторы
+                  span.header-second_line-catalog-inner_item-arrow
+                    img(src='/local/img/all/header_second_line_catalog_arrow.svg')
+                ul.header-second_line-catalog-ul-inner-second
+                  li.header-second_line-menu-inner_item
+                    a(href='/') VR Аттракционы
+                  li.header-second_line-menu-inner_item
+                    a(href='/') VR Аттракционы
+                  li.header-second_line-menu-inner_item
+                    a(href='/') VR Аттракционы
+                  li.header-second_line-menu-inner_item
+                    a(href='/') VR Аттракционы
+              li.header-second_line-catalog-inner_item
+                a(href='/')
+                  .header-second_line-catalog-inner_item-icon
+                    img(src='/local/img/all/header_catalog_icon_3.svg')
+                  .header-second_line-catalog-inner_item-text
+                    | VR клубы
+              li.header-second_line-catalog-inner_item
+                a(href='/')
+                  .header-second_line-catalog-inner_item-icon
+                    img(src='/local/img/all/header_catalog_icon_3.svg')
+                  .header-second_line-catalog-inner_item-text
+                    | VR клубы
+              li.header-second_line-catalog-inner_item
+                a(href='/')
+                  .header-second_line-catalog-inner_item-icon
+                    img(src='/local/img/all/header_catalog_icon_3.svg')
+                  .header-second_line-catalog-inner_item-text
+                    | VR клубы
+              li.header-second_line-catalog-inner_item
+                a(href='/')
+                  .header-second_line-catalog-inner_item-icon
+                    img(src='/local/img/all/header_catalog_icon_3.svg')
+                  .header-second_line-catalog-inner_item-text
+                    | VR клубы
+              li.header-second_line-catalog-inner_item
+                a(href='/')
+                  .header-second_line-catalog-inner_item-icon
+                    img(src='/local/img/all/header_catalog_icon_3.svg')
+                  .header-second_line-catalog-inner_item-text
+                    | VR клубы
+          li.header-second_line-menu-item.has_children
+            .header-second_line-menu-item-wrapper
+              a(href='/') VR Аттракционы
+              span.icon-wrapper
+                img(src='/local/img/all/header_second_line_arrow.svg' alt='Белая стрелка')
+            ul.header-second_line-menu-ul-inner
+              li.header-second_line-menu-inner_item
+                a(href='/') VR Аттракционы
+              li.header-second_line-menu-inner_item
+                a(href='/') VR Аттракционы
+              li.header-second_line-menu-inner_item
+                a(href='/') VR Аттракционы
+              li.header-second_line-menu-inner_item
+                a(href='/') VR Аттракционы
+          li.header-second_line-menu-item.has_children
+            .header-second_line-menu-item-wrapper
+              a(href='/') VR Автосимуляторы
+              span.icon-wrapper
+                img(src='/local/img/all/header_second_line_arrow.svg' alt='Белая стрелка')
+            ul.header-second_line-menu-ul-inner
+              li.header-second_line-menu-inner_item
+                a(href='/') VR Аттракционы
+              li.header-second_line-menu-inner_item
+                a(href='/') VR Аттракционы
+              li.header-second_line-menu-inner_item
+                a(href='/') VR Аттракционы
+              li.header-second_line-menu-inner_item
+                a(href='/') VR Аттракционы
+          li.header-second_line-menu-item
+            a(href='/') VR клубы
+          li.header-second_line-menu-item
+            a(href='/') VR Арены
+          li.header-second_line-menu-item
+            a(href='/') Роботы
+          li.header-second_line-menu-item.has_children
+            .header-second_line-menu-item-wrapper
+              a(href='/') Интерактивные проекции
+              span.icon-wrapper
+                img(src='/local/img/all/header_second_line_arrow.svg' alt='Белая стрелка')
+            ul.header-second_line-menu-ul-inner
+              li.header-second_line-menu-inner_item
+                a(href='/') VR Аттракционы
+              li.header-second_line-menu-inner_item
+                a(href='/') VR Аттракционы
+              li.header-second_line-menu-inner_item
+                a(href='/') VR Аттракционы
+              li.header-second_line-menu-inner_item
+                a(href='/') VR Аттракционы
+          li.header-second_line-menu-item
+            a(href='/') VR аксессуары
+          li.header-second_line-menu-item.has_children
+            .header-second_line-menu-item-wrapper
+              a(href='/') Ещё
+              span.icon-wrapper
+                img(src='/local/img/all/header_second_line_arrow.svg' alt='Белая стрелка')
+            ul.header-second_line-menu-ul-inner
+              li.header-second_line-menu-inner_item
+                a(href='/') VR Аттракционы
+              li.header-second_line-menu-inner_item
+                a(href='/') VR Аттракционы
+              li.header-second_line-menu-inner_item
+                a(href='/') VR Аттракционы
+              li.header-second_line-menu-inner_item
+                a(href='/') VR Аттракционы
+#sliding_menu.sliding_menu
+  .sliding_menu-header
+    .sliding_menu-header-tablet
+      .sliding_menu-header-back
+        span.sliding_menu-header-back-arrow
+          img(src='/local/img/all/sliding_menu-back-arrow.png' alt='Стрелка влево')
+        |                 Назад
+      a.sliding_menu-language(href='/')
+        span РУС
+        img(src='/local/img/all/ru.svg' alt='ru')
+      span.sliding_menu-header-close_icon
+        img(src='/local/img/all/sliding_menu-close_icon.png' alt='Close')
+    .sliding_menu-header-mobile
+      span.sliding_menu-header-close_icon
+        img(src='/local/img/all/sliding_menu-close_icon.png' alt='Close')
+      .sliding_menu-header-logo
+        img(src='/local/img/all/logo-header-desktop.svg' alt='Logo Top-VR')
+      .sliding_menu-header-search
+        form#sliding_menu-header-search-form.sliding_menu-header-search-form(action='/')
+          input#sliding_menu-header-search-input.sliding_menu-header-search-input(type='text' name='search' placeholder='Поиск по сайту')
+          button.sliding_menu-header-search-icon(type='submit')
+            img(src='/local/img/all/header-search-desktop.svg' alt='Lupa')
+          button.sliding_menu-header-reset-icon(type='reset')
+            img(src='/local/img/all/header-reset-desktop.svg' alt='Lupa')
+          .search_result
+            a.search_result-item(href='/')
+              img(src='/local/img/all/search-result-preview.jpg' alt='Превью поиска')
+              .search_result-item-content
+                .search_result-item-name
+                  span.search_result-item-found Клу
+                  | б
+                  |                                     VR под ключ
+            a.search_result-item(href='/')
+              img(src='/local/img/all/search-result-preview.jpg' alt='Превью поиска')
+              .search_result-item-content
+                .search_result-item-name
+                  span.search_result-item-found Клу
+                  | б
+                  |                                     VR под ключ
+        .sliding_menu-header-search-opener
+          img(src='/local/img/all/header-search-desktop.svg' alt='Lupa')
+  .sliding_menu-content
+    ul.sliding_menu-ul
+      li.sliding_menu-li.has_children
+        .sliding_menu-li-wrapper
+          a.sliding_menu-li-title(href='#') Каталог
+          span.sliding_menu-li-arrow
+            img(src='/local/img/all/header_second_line_catalog_arrow.svg' alt='Белая стрелка вправо')
+        ul.sliding_menu-ul-sub
+          li.sliding_menu-ul-sub-item
+            a(href='/')
+              .sliding_menu-ul-sub-item_icon
+                img(src='/local/img/all/header_catalog_icon_1.svg')
+              .sliding_menu-ul-sub-item_text
+                | VR Аттракционы
+              span.sliding_menu-ul-sub-item_arrow
+                img(src='/local/img/all/header_second_line_catalog_arrow.svg')
+            ul.sliding_menu-ul-sub.sliding_menu-ul-sub-second
+              li.sliding_menu-ul-sub-item
+                a(href='/') VR Аттракционы
+              li.sliding_menu-ul-sub-item
+                a(href='/') VR Аттракционы
+              li.sliding_menu-ul-sub-item
+                a(href='/') VR Аттракционы
+              li.sliding_menu-ul-sub-item
+                a(href='/') VR Аттракционы
+          li.sliding_menu-ul-sub_item
+            a(href='/')
+              .sliding_menu-ul-sub_item-icon
+                img(src='/local/img/all/header_catalog_icon_2.svg')
+              .sliding_menu-ul-sub_item-text
+                | VR Автосимуляторы
+              span.sliding_menu-ul-sub_item-arrow
+                img(src='/local/img/all/header_second_line_catalog_arrow.svg')
+            ul.sliding_menu-ul-sub-second
+              li.sliding_menu-ul-sub-item
+                a(href='/') VR Аттракционы
+              li.sliding_menu-ul-sub-item
+                a(href='/') VR Аттракционы
+              li.sliding_menu-ul-sub-item
+                a(href='/') VR Аттракционы
+              li.sliding_menu-ul-sub-item
+                a(href='/') VR Аттракционы
+          li.sliding_menu-ul-sub_item
+            a(href='/')
+              .sliding_menu-ul-sub_item-icon
+                img(src='/local/img/all/header_catalog_icon_3.svg')
+              .sliding_menu-ul-sub_item-text
+                | VR клубы
+          li.sliding_menu-ul-sub_item
+            a(href='/')
+              .sliding_menu-ul-sub_item-icon
+                img(src='/local/img/all/header_catalog_icon_3.svg')
+              .sliding_menu-ul-sub_item-text
+                | VR клубы
+          li.sliding_menu-ul-sub_item
+            a(href='/')
+              .sliding_menu-ul-sub_item-icon
+                img(src='/local/img/all/header_catalog_icon_3.svg')
+              .sliding_menu-ul-sub_item-text
+                | VR клубы
+          li.sliding_menu-ul-sub_item
+            a(href='/')
+              .sliding_menu-ul-sub_item-icon
+                img(src='/local/img/all/header_catalog_icon_3.svg')
+              .sliding_menu-ul-sub_item-text
+                | VR клубы
+          li.sliding_menu-ul-sub_item
+            a(href='/')
+              .sliding_menu-ul-sub_item-icon
+                img(src='/local/img/all/header_catalog_icon_3.svg')
+              .sliding_menu-ul-sub_item-text
+                | VR клубы
+      li.sliding_menu-li
+        .sliding_menu-li-wrapper
+          a.sliding_menu-li-title(href='#') Как выбрать VR-аттракцион?
+      li.sliding_menu-li
+        .sliding_menu-li-wrapper
+          a.sliding_menu-li-title(href='#') Доставка и оплата
+      li.sliding_menu-li
+        .sliding_menu-li-wrapper
+          a.sliding_menu-li-title(href='#') Гарантия
+      li.sliding_menu-li
+        .sliding_menu-li-wrapper
+          a.sliding_menu-li-title(href='#') О компании
+      li.sliding_menu-li
+        .sliding_menu-li-wrapper
+          a.sliding_menu-li-title(href='#') Контакты
+      li.sliding_menu-li
+        .sliding_menu-li-wrapper
+          a.sliding_menu-li-title(href='#') Блог
+    .sliding_menu-fly_links
+      a.sliding_menu-fly_link(href='#')
+        .sliding_menu-fly_link-image
+          img(src='/local/img/all/sliding-menu-fav.png' alt='Fav')
+          span.sliding_menu-fly_link-count 48
+        .sliding_menu-fly_link-title Избранное
+      a.sliding_menu-fly_link(href='#')
+        .sliding_menu-fly_link-image
+          img(src='/local/img/all/sliding-menu-cart.png' alt='Cart')
+          span.sliding_menu-fly_link-count 0
+        .sliding_menu-fly_link-title Корзина
+      a.sliding_menu-fly_link(href='#')
+        .sliding_menu-fly_link-image
+          img(src='/local/img/all/sliding-menu-compare.png' alt='Compare')
+          span.sliding_menu-fly_link-count 0
+        .sliding_menu-fly_link-title Сравнение
+    .sliding_menu-social_icons-and-language
+      .sliding_menu-social_icons
+        a.sliding_menu-social-item(href='/')
+          img(src='/local/img/all/instagram-header-desktop.svg' alt='Instagram')
+        a.sliding_menu-social-item(href='/')
+          img(src='/local/img/all/telegram-header-desktop.svg' alt='Telegram')
+        a.sliding_menu-social-item(href='/')
+          img(src='/local/img/all/VK-header-desktop.svg' alt='VK')
+        a.sliding_menu-social-item(href='/')
+          img(src='/local/img/all/whatsapp-header-desktop.svg' alt='WhatsApp')
+      a.sliding_menu-language(href='/')
+        span РУС
+        img(src='/local/img/all/ru.svg' alt='ru')
+    .sliding_menu-address
+      | г. Москва, Киевское 
+      br
+      |             ш. 22 км, дом 4, строение 2
+    .sliding_menu-callback
+      a.sliding_menu-callback-phone(href='tel:+79999999999') 8 (800) 500-40-17
+      a.sliding_menu-callback-button.open-callback(href='javascript:void(0)') Заказать звонок

@@ -1,0 +1,18 @@
+.best-slider__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+@media (max-width: 991px) {
+  .best-slider__header {
+    margin-bottom: 30px;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+  }
+}
+
+.best-slider__title h2 {
+  margin-bottom: 0;
+}

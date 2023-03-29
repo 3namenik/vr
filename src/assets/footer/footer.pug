@@ -2,42 +2,122 @@
 link(rel="stylesheet", href="/assets/footer/footer.css")
 script(async src="/assets/footer/footer.js")
 
-footer.footer
+.main_callback_form-wrapper
+  .main_callback_form-title заголовок
+  .main_callback_form-desc
+    | Звоните по телефону 8 (800) 500-40-17 или заполните форму и наш менеджер оперативно свяжется с вами!
+  form.main_callback_form(action='/')
+    .input
+
+.backdrop
+  #video-modal.modal
+    span.modal-close
+      img(src='/local/img/all/modal-close.svg' alt='Modal close icon')
+    .modal-content
+      iframe(width='855' height='474' src='' title='YouTube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share' allowfullscreen='')
+  #callback-modal.modal.gradient-modal
+    .modal-close
+      img(src='/local/img/all/modal-close.svg' alt='Modal close icon')
+    .modal-content
+      .modal-title.micra Заголовок
+      .modal-text.mt-30px
+        | Звоните по телефону 
+        a.text-bold(href='tel:+78005004017') 8 (800) 500-40-17
+        |  или 
+        span.text-bold заполните форму
+        |  и наш менеджер оперативно свяжется с вами!
+      form.modal-form.mt-20px(action='/')
+        .input.modal-input
+          input(type='text' name='name' placeholder='Как к вам обращаться')
+        .input.modal-input
+          input(type='text' name='phone' required='' placeholder='Ваш номер телефона*')
+        button.btn.btn-orange.modal-btn Отправить
+        .modal-user_consent Нажимая на кнопку вы даете согласие на обработку персональных данных
+  #subscribe-modal.modal.gradient-modal
+    .modal-close
+      img(src='/local/img/all/modal-close.svg' alt='Modal close icon')
+    .modal-content
+      .modal-title.micra Подписаться на новости
+      .modal-text.mt-20px
+        | Узнавайте о скидках и акциях первым
+      form.modal-form.mt-20px(action='/')
+        .input.modal-input
+          input(type='email' name='email' placeholder='E-mail*' required='')
+        button.btn.btn-orange.modal-btn Отправить
+        .modal-user_consent Нажимая на кнопку вы даете согласие на обработку персональных данных
+  #subscribe-modal.modal.gradient-modal
+    .modal-close
+      img(src='/local/img/all/modal-close.svg' alt='Modal close icon')
+    .modal-content
+      .modal-title.micra Подписаться на новости
+      .modal-text.mt-20px
+        | Узнавайте о скидках и акциях первым
+      form.modal-form.mt-20px(action='/')
+        .input.modal-input
+          input(type='email' name='email' placeholder='E-mail*' required='')
+        button.btn.btn-orange.modal-btn Отправить
+        .modal-user_consent Нажимая на кнопку вы даете согласие на обработку персональных данных
+  #presentation-modal.modal.gradient-modal
+    .modal-close
+      img(src='/local/img/all/modal-close.svg' alt='Modal close icon')
+    .modal-content
+      .modal-title.micra Получите презентацию + комплект материалов
+      .modal-text.mt-20px
+        | Оставьте свои данные ниже и мы отправим вам материалы
+      form.modal-form.mt-20px(action='/')
+        .input.modal-input.w-50
+          input(type='text' name='name' placeholder='Как к вам обращаться?')
+        .input.modal-input.w-50
+          input(type='text' name='phone' placeholder='Ваш номер телефона*')
+        .input.modal-input
+          input(type='email' name='email' placeholder='E-mail*' required='')
+        button.btn.btn-background-gradient.modal-btn(type='submit')
+          .inner-container.download-pdf
+            .download-pdf-text
+              .download-pdf-title Получить презентацию
+              .download-pdf-desc + комплект материалов
+            .download-pdf-icon
+              img(src='/local/img/all/download-pdf.svg' alt='Download PDF Icon')
+        .modal-user_consent Нажимая на кнопку вы даете согласие на обработку персональных данных
+  .backdrop-blur
+footer
+
+
 
 div(style="height: 500px")
-  #modal-callback.modal.fade(aria-hidden='true' aria-labelledby='exampleModalToggleLabel' tabindex='-1')
-  .modal-dialog.modal-dialog-centered
-    .modal-content(action="#")
-      button.modal-content__close(data-bs-dismiss="modal")
-        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 20 20" fill="none">
-          <path d="M1 1L19 19" stroke="#999999" stroke-width="2" stroke-linecap="round"/>
-          <path d="M19 1L0.999969 19" stroke="#999999" stroke-width="2" stroke-linecap="round"/>
-        </svg>
-      .modal-content__title
-        | Обратный звонок
-      .modal-content__desc
-        | Заполните форму и мы свяжемся с вами
-      form#form-content.form-content(action="#")
-        input(type="text" required name="user-name" placeholder="Ваше имя")
-        input(type="text" required name="phone" placeholder="Ваш телефон")
-        .form-content__privacy
-          | Нажимая на кнопку, я принимаю <a href="#">условия соглашения</a>
-        button.btn.btn_green.form-content__btn(type="submit" title="Отправить")
-          | Отправить заявку
+//-   #modal-callback.modal.fade(aria-hidden='true' aria-labelledby='exampleModalToggleLabel' tabindex='-1')
+//-   .modal-dialog.modal-dialog-centered
+//-     .modal-content(action="#")
+//-       button.modal-content__close(data-bs-dismiss="modal")
+//-         <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 20 20" fill="none">
+//-           <path d="M1 1L19 19" stroke="#999999" stroke-width="2" stroke-linecap="round"/>
+//-           <path d="M19 1L0.999969 19" stroke="#999999" stroke-width="2" stroke-linecap="round"/>
+//-         </svg>
+//-       .modal-content__title
+//-         | Обратный звонок
+//-       .modal-content__desc
+//-         | Заполните форму и мы свяжемся с вами
+//-       form#form-content.form-content(action="#")
+//-         input(type="text" required name="user-name" placeholder="Ваше имя")
+//-         input(type="text" required name="phone" placeholder="Ваш телефон")
+//-         .form-content__privacy
+//-           | Нажимая на кнопку, я принимаю <a href="#">условия соглашения</a>
+//-         button.btn.btn_green.form-content__btn(type="submit" title="Отправить")
+//-           | Отправить заявку
 
       
-#modal-succes.modal.fade(aria-hidden='true' aria-labelledby='exampleModalToggleLabel' tabindex='-1')
-  .modal-dialog.modal-dialog-centered
-    .modal-content
-      .modal-content__title
-        | Заявка отправлена
-      .modal-content__desc
-        | В близжайшее время наш менеджер свяжется с вами!
-#modal-error.modal.fade(aria-hidden='true' aria-labelledby='exampleModalToggleLabel' tabindex='-1')
-  .modal-dialog.modal-dialog-centered
-    .modal-content
-      .modal-content__title
-        | Ошибка отправки
-      .modal-content__desc
-        | Попробуйте обновить страницу или связаться с нами по номеру телефона!
-        <!-- <a href="tel:<?= str_replace(' ', '', file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/local/templates/' . SITE_TEMPLATE_ID . '/text/phone.php')) ?>"><?= file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/local/templates/' . SITE_TEMPLATE_ID . '/text/phone.php') ?></a> -->
+//- #modal-succes.modal.fade(aria-hidden='true' aria-labelledby='exampleModalToggleLabel' tabindex='-1')
+//-   .modal-dialog.modal-dialog-centered
+//-     .modal-content
+//-       .modal-content__title
+//-         | Заявка отправлена
+//-       .modal-content__desc
+//-         | В близжайшее время наш менеджер свяжется с вами!
+//- #modal-error.modal.fade(aria-hidden='true' aria-labelledby='exampleModalToggleLabel' tabindex='-1')
+//-   .modal-dialog.modal-dialog-centered
+//-     .modal-content
+//-       .modal-content__title
+//-         | Ошибка отправки
+//-       .modal-content__desc
+//-         | Попробуйте обновить страницу или связаться с нами по номеру телефона!
+//-         <!-- <a href="tel:<?= str_replace(' ', '', file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/local/templates/' . SITE_TEMPLATE_ID . '/text/phone.php')) ?>"><?= file_get_contents($_SERVER['DOCUMENT_ROOT'] . '/local/templates/' . SITE_TEMPLATE_ID . '/text/phone.php') ?></a> -->

@@ -1,0 +1,27 @@
+<!-- catalog-slider -->
+link(rel="stylesheet", href="/assets/catalog-slider/catalog-slider.css")
+script(async src="/assets/catalog-slider/catalog-slider.js")
+
+link(rel="stylesheet" href="/local/libs/swiper/swiper-bundle.min.css" )
+script(src="/local/libs/swiper/swiper-bundle.min.js" defer)
+
+.slider_wrap
+    .swiper.wrap.catalog-slider
+        .swiper-wrapper
+            .swiper-slide
+                include ../catalog-item/catalog-item
+            .swiper-slide
+                include ../catalog-item/catalog-item
+            .swiper-slide
+                include ../catalog-item/catalog-item
+            .swiper-slide
+                include ../catalog-item/catalog-item
+            .swiper-slide
+                include ../catalog-item/catalog-item
+            .swiper-slide
+                include ../catalog-item/catalog-item
+        .swiper-pagination
+    .swiper-button-prev
+        img(src='/local/img/all/swiper-button-next-prev-custom.png' alt='Swiper arrow')
+    .swiper-button-next
+        img(src='/local/img/all/swiper-button-next-prev-custom.png' alt='Swiper arrow')
