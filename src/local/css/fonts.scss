@@ -6,13 +6,24 @@
     font-display: swap;
 }
 
-@font-face {
+/* @font-face {
     font-family: "Micra";
-    src: url("/local/fonts/Micra/micra_bold.ttf") format("truetype");
+    src: url("/local/fonts/Micra/Micra-bold.ttf") format("truetype");
     font-weight: bold;
     font-style: normal;
     font-display: swap;
+} */
+
+/* Micra */
+
+@font-face {
+    font-family: 'Micra';
+    font-weight: 700;
+    font-style: normal;
+    src: url(/local/fonts/Micra/Micra-Bold.ttf);
 }
+
+/* end Micra */
 
 @font-face {
     font-family: "Gilroy";

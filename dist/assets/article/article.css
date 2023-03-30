@@ -1,0 +1,28 @@
+.article {
+  width: 100%;
+  max-width: 788px;
+  margin: auto;
+}
+
+.article__title {
+  margin-bottom: 10px;
+}
+.article__title h1 {
+  margin: 0;
+}
+
+.article__content img {
+  margin: 20px auto 40px;
+  border-radius: 10px;
+  display: block;
+}
+
+.article__date {
+  margin-bottom: 10px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #666666;
+}

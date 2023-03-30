@@ -1,0 +1,64 @@
+.page-404{
+    margin-top: 90px;
+
+    @media (max-width: 575px){
+        margin-top: 70px;
+    }
+}
+
+.page-404__numb{
+    font-family: 'Micra';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 130px;
+    line-height: 130%;
+    text-align: center;
+    color: #FFFFFF;
+    @media (max-width: 575px) {
+        font-size: 100px;
+    }
+}
+
+.page-404__title{
+    font-family: 'Micra';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 27px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+    
+    @media (max-width: 575px) {
+        margin-bottom: 10px;
+        
+        font-size: 24px;
+    }
+}
+
+.page-404__desc{
+    
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+    @media (max-width: 575px) {
+        gap: 30px;
+    }
+
+    a{
+        color: #EA3323;
+        text-decoration: underline;
+        &:hover,
+        &:focus{
+            color: #F43D2D;
+        }
+    }
+}

@@ -1,86 +1,30 @@
 .home-recomend {
   gap: 13px 20px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 586fr 283fr 283fr;
+  grid-auto-rows: 185px;
 }
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .home-recomend {
     grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(234px, max-content);
   }
 }
-@media (max-width: 540px) {
+@media (max-width: 539px) {
   .home-recomend {
-    display: flex;
-    flex-direction: column;
+    grid-auto-rows: 250px;
+    grid-template-columns: 1fr;
   }
 }
-
-.home-recomend__item {
-  position: relative;
-  padding: 10px 15px;
-  border-radius: 10px;
-  display: block;
-  min-height: 186px;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  overflow: hidden;
-}
-.home-recomend__item:hover .home-recomend__item-img, .home-recomend__item:focus .home-recomend__item-img {
-  transform: scale(1.1);
-}
-@media (max-width: 540px) {
-  .home-recomend__item {
-    min-height: 250px;
+@media (min-width: 539px) {
+  .home-recomend .promo-item:first-child {
+    grid-row: 1/3;
   }
 }
-.home-recomend__item:first-child {
-  grid-row: 1/3;
-  grid-column: 1/3;
-}
-@media (max-width: 800px) {
-  .home-recomend__item:first-child {
-    min-height: 484px;
+@media (min-width: 539px) and (max-width: 900px) {
+  .home-recomend .promo-item:first-child {
+    grid-row: unset;
+    grid-column: 1/3;
+    height: 484px;
   }
-}
-@media (max-width: 540px) {
-  .home-recomend__item:first-child {
-    min-height: 250px;
-  }
-}
-
-.home-recomend__item-img {
-  transition: transform 0.3s ease;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-}
-.home-recomend__item-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.home-recomend__item-title {
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 120%;
-  color: #111111;
-  z-index: 1;
-}
-
-.home-recomend__item-desc {
-  margin-top: 10px;
-  font-family: "Gilroy";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 140%;
-  color: #111111;
-  z-index: 1;
 }

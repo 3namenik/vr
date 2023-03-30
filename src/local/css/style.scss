@@ -18,9 +18,22 @@ body {
   padding: 0;
   margin: 0;
 
-  h1, .h1 {}
+  h1, .h1 {
+    font-family: 'Micra', "Gilroy", 'Roboto', Sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 130%;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+  
+    @media (max-width: 575px) {
+      text-align: center;
+      font-size: 24px;
+    }
+  }
   h2, .h2 {
-    font-family: 'Micra';
+    font-family: 'Micra', "Gilroy", 'Roboto', Sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 27px;
@@ -33,9 +46,25 @@ body {
     }
   }
 
-  h3, .h3 {}
+  h3, .h3 {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+  }
   
-  h4, .h4 {}
+  h4, .h4 {
+    margin-bottom: 5px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #FFFFFF;
+  }
 
   p {
     font-style: normal;
@@ -44,6 +73,27 @@ body {
     line-height: 26px;
   }
 
+  ul {    
+    list-style-position: inside;
+    margin-bottom: 20px;
+    color: #EA3323;
+
+    li{
+      list-style-type: none;
+      color: #FFFFFF;
+      position: relative;
+      padding-left: 15px;
+
+      &:before{
+        display: block;
+        content: '•';
+        color: #EA3323;
+        position: absolute;
+        left: 0;
+      }
+    }
+  }
+  
   a{
     &:hover,
     &:focus{
@@ -561,6 +611,7 @@ body {
 
 .header-logo_line-callback-button:hover {
   text-decoration: underline;
+  color: #ea3323;
 }
 
 /* header */

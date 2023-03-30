@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Micra";
   src: url("/local/fonts/Micra/micra.ttf") format("truetype");
@@ -5,13 +6,21 @@
   font-style: normal;
   font-display: swap;
 }
+/* @font-face {
+    font-family: "Micra";
+    src: url("/local/fonts/Micra/Micra-bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+} */
+/* Micra */
 @font-face {
   font-family: "Micra";
-  src: url("/local/fonts/Micra/micra_bold.ttf") format("truetype");
-  font-weight: bold;
+  font-weight: 700;
   font-style: normal;
-  font-display: swap;
+  src: url(/local/fonts/Micra/Micra-Bold.ttf);
 }
+/* end Micra */
 @font-face {
   font-family: "Gilroy";
   src: url("/local/fonts/Gilroy/Gilroy-Regular.eot");
@@ -187,8 +196,23 @@ body {
   padding: 0;
   margin: 0;
 }
+body h1, body .h1 {
+  font-family: "Micra", "Gilroy", "Roboto", Sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 130%;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+@media (max-width: 575px) {
+  body h1, body .h1 {
+    text-align: center;
+    font-size: 24px;
+  }
+}
 body h2, body .h2 {
-  font-family: "Micra";
+  font-family: "Micra", "Gilroy", "Roboto", Sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 27px;
@@ -201,11 +225,47 @@ body h2, body .h2 {
     text-align: center;
   }
 }
+body h3, body .h3 {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+body h4, body .h4 {
+  margin-bottom: 5px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: #FFFFFF;
+}
 body p {
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 26px;
+}
+body ul {
+  list-style-position: inside;
+  margin-bottom: 20px;
+  color: #EA3323;
+}
+body ul li {
+  list-style-type: none;
+  color: #FFFFFF;
+  position: relative;
+  padding-left: 15px;
+}
+body ul li:before {
+  display: block;
+  content: "•";
+  color: #EA3323;
+  position: absolute;
+  left: 0;
 }
 button {
   /* appearance: none;
@@ -704,6 +764,7 @@ body {
 
 .header-logo_line-callback-button:hover {
   text-decoration: underline;
+  color: #ea3323;
 }
 
 /* header */

@@ -36,6 +36,11 @@
   line-height: 30px;
   color: #FFFFFF;
 }
+@media (max-width: 550px) {
+  .footer__title {
+    margin-bottom: 10px;
+  }
+}
 
 .footer-menu {
   display: flex;

@@ -1,0 +1,49 @@
+.promo-item {
+  position: relative;
+  padding: 10px 15px;
+  border-radius: 10px;
+  display: block;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  overflow: hidden;
+}
+.promo-item:hover .promo-item__img, .promo-item:focus .promo-item__img {
+  transform: scale(1.1);
+}
+
+.promo-item__img {
+  transition: transform 0.3s ease;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.promo-item__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.promo-item__title {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  color: #111111;
+  z-index: 1;
+}
+
+.promo-item__desc {
+  margin-top: 10px;
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #111111;
+  z-index: 1;
+}

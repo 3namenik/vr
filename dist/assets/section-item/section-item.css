@@ -5,6 +5,10 @@
   backdrop-filter: blur(3.5px);
   /* Note: backdrop-filter has minimal browser support */
   border-radius: 10px;
+  transition: background 0.3s ease;
+}
+.section-item:hover, .section-item:focus {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.1)), rgba(127, 0, 255, 0.27);
 }
 
 .section-item__icon {

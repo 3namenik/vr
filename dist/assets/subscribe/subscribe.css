@@ -1,0 +1,15 @@
+.subscribe {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 150%;
+  color: #FFFFFF;
+  width: max-content;
+}
+.subscribe:hover, .subscribe:focus {
+  text-decoration: underline;
+  color: #FFFFFF;
+}

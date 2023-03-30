@@ -1,0 +1,18 @@
+.breadcrumbs {
+    margin-bottom: 20px;
+    color: #AFAFAF;
+}
+
+.breadcrumbs__item {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 16px;
+    color: #AFAFAF;
+
+    &:hover,
+    &:focus {
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,26 @@
+<!-- blog -->
+link(rel="stylesheet", href="/assets/blog/blog.css")
+script(async src="/assets/blog/blog.js")
+
+.m-bottom.blog
+    .blog__title
+        h2 Блог
+    .blog__tg
+        include ../subscribe/subscribe
+    .blog__cont
+        include ../blog-item/blog-item_vertical
+        include ../blog-item/blog-item_vertical
+        include ../blog-item/blog-item_vertical
+        include ../blog-item/blog-item
+        include ../blog-item/blog-item
+        include ../blog-item/blog-item
+        include ../blog-item/blog-item
+        include ../blog-item/blog-item
+        include ../blog-item/blog-item
+    .blog__lazy
+        a.btn.btn-background-gradient(href='#')
+            span.inner-container Показать больше
+
+    .blog__pag    
+        include ../pagination/pagination
+include ../form-sub/form-sub
