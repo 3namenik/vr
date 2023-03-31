@@ -1,0 +1,20 @@
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.rating__val {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    color: #C3C3C3;
+}
+
+.rating__star{
+    display: flex;
+    gap: 2px;
+}

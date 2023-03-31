@@ -1350,3 +1350,26 @@ body{
 }
 
 /* end swiper */
+
+/* table */
+
+table{
+  position: relative;
+ 
+  tr{
+    &:not(:last-child){
+      border-bottom: 1px solid #64398E;
+    }
+  }
+  td{
+    padding: 10px;
+    &:not(:first-child){
+      border-left: 1px solid #64398E;
+    }
+    &:not(:last-child){
+      border-right: 1px solid #64398E;
+    }
+  }
+}
+
+/* end table */

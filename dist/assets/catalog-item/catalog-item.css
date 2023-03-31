@@ -13,6 +13,16 @@
   flex-direction: column;
 }
 
+.catalog-item__review {
+  margin: auto 15px 10px;
+}
+@media (max-width: 991px) {
+  .catalog-item__review {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .catalog-item__picture {
   border-radius: 8px 8px 0px 0px;
   width: 100%;
@@ -83,32 +93,6 @@
   line-height: 120%;
   color: #FFFFFF;
   margin: 0 15px 10px;
-}
-
-.catalog-item__review {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-@media (max-width: 991px) {
-  .catalog-item__review {
-    display: flex;
-    justify-content: center;
-  }
-}
-
-.catalog-item__review-val {
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 17px;
-  display: flex;
-  align-items: center;
-  color: #C3C3C3;
-}
-
-.catalog-item__review {
-  margin: auto 15px 10px;
 }
 
 .catalog-item__stock {

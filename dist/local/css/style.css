@@ -1400,3 +1400,21 @@ body .swiper-wrapper {
 }
 
 /* end swiper */
+/* table */
+table {
+  position: relative;
+}
+table tr:not(:last-child) {
+  border-bottom: 1px solid #64398E;
+}
+table td {
+  padding: 10px;
+}
+table td:not(:first-child) {
+  border-left: 1px solid #64398E;
+}
+table td:not(:last-child) {
+  border-right: 1px solid #64398E;
+}
+
+/* end table */
