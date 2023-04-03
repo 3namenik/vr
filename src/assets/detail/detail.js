@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
+/* document.addEventListener('DOMContentLoaded', () => { */
     new Swiper('.detail__img-big-slider', {
         slidesPerView: 1,
         spaceBetween: 10,
@@ -16,7 +16,11 @@ document.addEventListener('DOMContentLoaded', () => {
             swiper: new Swiper('.detail__img-min-slider', {
                 slidesPerView: 'auto',
                 spaceBetween: 10,
-                direction: 'vertical',
+                breakpoints: {
+                    990: {
+                        direction: 'vertical',
+                    }
+                }
                 /* navigation: {
                     nextEl: '.catalog-element__slider-min-down',
                     prevEl: '.catalog-element__slider-min-up',
@@ -25,8 +29,8 @@ document.addEventListener('DOMContentLoaded', () => {
         },
     })
 
-    new Quantity(document.querySelector('.select-quantity'));
-});
+/*     new Quantity(document.querySelector('.select-quantity'));
+}); */
 
 /** 
  * 

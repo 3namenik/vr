@@ -13,8 +13,11 @@
     }
 
 }
+
 .detail__img-big-slider{
-    
+    @media (max-width: 991px) {
+        width: 100%;
+    }
 }
 
 .detail__images{
@@ -22,8 +25,8 @@
     gap: 10px;
 
     @media (max-width: 991px){
-        flex-direction: column;
-        align-items: flex-start;
+        display: grid;
+        grid-template-columns: 100%;
     }
 
     .swiper-wrapper {
@@ -54,10 +57,12 @@
 
     @media (max-width: 991px) {
         margin: 0;
+        width: 100%;
     }
 
     .swiper-slide{
         height: 70px;
+        width: 70px;
         border-radius: 4px;
         overflow: hidden;
 
@@ -269,18 +274,25 @@
 
 .detail-tablist{
     .nav-tab-cont{
-        margin: 0 -15px 30px;
+        margin: 0 0 30px;
         
         overflow-x: auto;
         overflow-y: hidden;
+        
+        @media (max-width: 1220px) {
+            margin: 0 -15px 30px;
+        }
     }
     .nav-tabs{
-        padding: 0 15px;
-        padding-bottom: 2px;
         position: relative;
         flex-wrap: nowrap;
         
         min-width: 100%;
+
+        @media (max-width: 1220px) {
+            padding: 0 15px 2px;
+        }
+
         &:after{
             position: absolute;
             bottom: 1px;

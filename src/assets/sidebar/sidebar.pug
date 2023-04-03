@@ -1,0 +1,26 @@
+<!-- sidebar -->
+link(rel="stylesheet", href="/assets/sidebar/sidebar.css")
+//- script(async src="/assets/sidebar/sidebar.js")
+
+.sidebar.border-gradient
+    .sidebar__item
+        a.sidebar__link(href="#") 
+            | VR аттракционы
+    .sidebar__item
+        a.sidebar__link(href="#") 
+            | VR аттракционы
+        button.sidebar__arrow.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#sidebar-1' aria-expanded='false' aria-controls='sidebar-1')
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="5" viewBox="0 0 12 5" fill="none">
+                <path d="M11 0.5C9.81023 1.45181 8.21402 2.72878 7.14839 3.58129C6.64765 3.98188 6.39728 4.18217 6.10775 4.21355C6.03613 4.22132 5.96387 4.22132 5.89225 4.21355C5.60272 4.18217 5.35235 3.98188 4.85161 3.58129C3.78598 2.72878 2.18977 1.45181 1 0.500001" stroke="white" stroke-linecap="round"/>
+            </svg>
+    #sidebar-1.collapse
+        .sidebar__child
+            .sidebar__item
+                a.sidebar__link(href="#") 
+                    | VR аттракционы
+            .sidebar__item
+                a.sidebar__link(href="#") 
+                    | VR аттракционы
+    .sidebar__item
+        a.sidebar__link(href="#") 
+            | VR аттракционы

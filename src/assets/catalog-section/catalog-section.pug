@@ -1,5 +1,29 @@
-<!-- catalog-sections -->
-link(rel="stylesheet", href="/assets/catalog-sections/catalog-sections.css")
-script(async src="/assets/catalog-sections/catalog-sections.js")
+<!-- catalog-section -->
+link(rel="stylesheet", href="/assets/catalog-section/catalog-section.css")
+//- script(async src="/assets/catalog-section/catalog-section.js")
 
-.catalog-sections
+h1 VR аттракционы
+.m-bottom.catalog-section
+    .catalog-section__sidebar
+        include ../sidebar/sidebar
+    .catalog-section__list
+        .sorting.dropdown
+            button.dropdown-toggle.border-gradient(type="button" href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+                .dropdown-toggle__label
+                    | Сначала дорогие
+                .dropdown-toggle__icon
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="6" viewBox="0 0 12 6" fill="none">
+                        <path d="M11 1C9.81023 1.95181 8.21402 3.22878 7.14839 4.08129C6.64765 4.48188 6.39728 4.68217 6.10775 4.71355C6.03613 4.72132 5.96387 4.72132 5.89225 4.71355C5.60272 4.68217 5.35235 4.48188 4.85161 4.08129C3.78598 3.22878 2.18977 1.95181 1 1" stroke="white" stroke-linecap="round"/>
+                    </svg>
+
+            .dropdown-menu.border-gradient
+                a.dropdown-item(href='#') Action
+                a.dropdown-item(href='#') Another action
+                a.dropdown-item(href='#') Something else here
+
+        include ../catalog-list/catalog-list
+
+| Обычный текст
+| Текст из серии при строительстве столкнулись с таким то, применили такое то решение. Вот вам яркий пример современных тенденций — глубокий уровень погружения играет важную роль в формировании глубокомысленных рассуждений. Банальные, но неопровержимые выводы, а также базовые сценарии поведения пользователей обнародованы. В своём стремлении улучшить пользовательский опыт мы упускаем, что элементы политического процесса формируют глобальную экономическую сеть и при этом — разоблачены.
+
+include ../form-content/form-content

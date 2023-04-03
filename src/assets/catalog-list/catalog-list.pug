@@ -1,0 +1,17 @@
+<!-- catalog-list -->
+link(rel="stylesheet", href="/assets/catalog-list/catalog-list.css")
+//- script(async src="/assets/catalog-list/catalog-list.js")
+
+.catalog-list
+    include ../catalog-item/catalog-item
+    include ../catalog-item/catalog-item
+    include ../catalog-item/catalog-item
+    include ../catalog-item/catalog-item
+    include ../catalog-item/catalog-item
+    include ../catalog-item/catalog-item
+.catalog-list__pagination-cont
+    .catalog-list__lazy
+        a.btn.btn-background-gradient(href='#')
+            span.inner-container Показать больше
+    .catalog-list__pagination
+        include ../pagination/pagination

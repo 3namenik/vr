@@ -198,3 +198,70 @@ a.footer__contacts-block-desc{
     opacity: 0;
     transition: opacity .3s ease;
 }
+
+/* .user-info */
+
+.user-info{
+    display: flex;
+    flex-direction: column;
+    border-radius: 2px 0px 0px 2px;
+    overflow: hidden;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    z-index: 10;
+    background-color: #424F60;
+}
+
+.user-info__link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+   
+    position: relative;
+    width: 40px;
+    height: 60px;
+
+    &:hover,
+    &:focus{
+        &:before{
+            opacity: 1;
+        }
+    }
+
+    &:before{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        content: '';
+        display: block;
+        transition: opacity .3s ease;
+        opacity: 0;
+        z-index: -1;
+        background: linear-gradient(88.37deg, #64398E 20.21%, #2F49D3 102.29%);
+    }
+}
+
+.user-info__link-label{
+    text-align: center;
+    background-color: white;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    line-height: 20px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    color: #000000;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+/* end .user-info */
