@@ -1,4 +1,4 @@
-/* document.addEventListener('DOMContentLoaded', () => { */
+document.addEventListener('DOMContentLoaded', () => {
     new Swiper('.detail__img-big-slider', {
         slidesPerView: 1,
         spaceBetween: 10,
@@ -29,8 +29,8 @@
         },
     })
 
-/*     new Quantity(document.querySelector('.select-quantity'));
-}); */
+/*     new Quantity(document.querySelector('.select-quantity'));*/
+}); 
 
 /** 
  * 
